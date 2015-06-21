@@ -1,0 +1,2 @@
+module DistributedHealthsHelper
+end

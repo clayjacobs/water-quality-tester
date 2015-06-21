@@ -1,0 +1,61 @@
+<%= form_for(@distributed_health) do |f| %>
+  <% if @distributed_health.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@distributed_health.errors.count, "error") %> prohibited this distributed_health from being saved:</h2>
+
+      <ul>
+      <% @distributed_health.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ph %><br>
+    <%= f.text_field :ph %>
+  </div>
+  <div class="field">
+    <%= f.label :chlorine %><br>
+    <%= f.text_field :chlorine %>
+  </div>
+  <div class="field">
+    <%= f.label :ph %><br>
+    <%= f.text_field :ph %>
+  </div>
+  <div class="field">
+    <%= f.label :magnified %><br>
+    <%= f.text_field :magnified %>
+  </div>
+  <div class="field">
+    <%= f.label :taste %><br>
+    <%= f.text_area :taste %>
+  </div>
+  <div class="field">
+    <%= f.label :odor %><br>
+    <%= f.text_area :odor %>
+  </div>
+  <div class="field">
+    <%= f.label :temperature %><br>
+    <%= f.text_field :temperature %>
+  </div>
+  <div class="field">
+    <%= f.label :mercury %><br>
+    <%= f.text_field :mercury %>
+  </div>
+  <div class="field">
+    <%= f.label :hardness %><br>
+    <%= f.text_field :hardness %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br>
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br>
+    <%= f.text_field :long %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

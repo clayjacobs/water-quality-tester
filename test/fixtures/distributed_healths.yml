@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ph: 1.5
+  chlorine: 1.5
+  ph: 9.99
+  magnified: 
+  taste: MyText
+  odor: MyText
+  temperature: 9.99
+  mercury: 1.5
+  hardness: 1.5
+  lat: 1.5
+  long: 1.5
+
+two:
+  ph: 1.5
+  chlorine: 1.5
+  ph: 9.99
+  magnified: 
+  taste: MyText
+  odor: MyText
+  temperature: 9.99
+  mercury: 1.5
+  hardness: 1.5
+  lat: 1.5
+  long: 1.5
