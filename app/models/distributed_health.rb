@@ -1,2 +1,2 @@
-class DistributedHealth < ActiveRecord::Base
+class DistributedHealth
 end
