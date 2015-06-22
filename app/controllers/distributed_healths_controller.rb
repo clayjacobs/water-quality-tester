@@ -69,6 +69,6 @@ class DistributedHealthsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def distributed_health_params
-      params.require(:distributed_health).permit(:ph, :chlorine, :ph, :magnified, :taste, :odor, :temperature, :mercury, :hardness, :lat, :long)
+      params.require(:distributed_health).permit(:ph, :chlorine, :ph, :magnified_Link, :taste, :odor, :temperature, :mercury, :hardness, :lat, :long)
     end
 end

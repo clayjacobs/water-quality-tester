@@ -4,6 +4,9 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
+require "bson"
+require "moped"
+require "mongoid/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -24,5 +27,6 @@ module Watertester
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.serve_static_assets = true
   end
 end
