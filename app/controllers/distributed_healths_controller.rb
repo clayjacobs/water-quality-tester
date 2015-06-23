@@ -1,5 +1,6 @@
 class DistributedHealthsController < ApplicationController
   before_action :set_distributed_health, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   # GET /distributed_healths
   # GET /distributed_healths.json
