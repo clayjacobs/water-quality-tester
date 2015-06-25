@@ -12,4 +12,5 @@ class DistributedHealth
     field :long, type: Float
     field :timestamp, type: String
     field :testdata, type: Boolean
+    field :deviceID, type: String
 end
