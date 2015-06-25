@@ -10,4 +10,6 @@ class DistributedHealth
     field :hardness, type: Float
     field :lat, type: Float
     field :long, type: Float
+    field :timestamp, type: String
+    field :testdata, type: Boolean
 end

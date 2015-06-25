@@ -15,6 +15,8 @@
       <th>Hardness</th>
       <th>Lat</th>
       <th>Long</th>
+      <th>Timestamp</th>
+      <th>Test Data?</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -32,6 +34,8 @@
         <td><%= distributed_health.hardness %></td>
         <td><%= distributed_health.lat %></td>
         <td><%= distributed_health.long %></td>
+        <td><%= distributed_health.timestamp %></td>
+        <td><%= distributed_health.testdata %></td>
         <td><%= link_to 'Show', distributed_health %></td>
         <td><%= link_to 'Edit', edit_distributed_health_path(distributed_health) %></td>
         <td><%= link_to 'Destroy', distributed_health, method: :delete, data: { confirm: 'Are you sure?' } %></td>
