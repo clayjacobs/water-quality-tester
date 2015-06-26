@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Distributed Healths</h1>
-
 <table>
   <thead>
     <tr>
@@ -47,5 +46,10 @@
 </table>
 
 <br>
+
+<h1>Database Stats</h1>
+<p id="total">Total number of database entries: <%= DistributedHealth.count %></p>
+<p id="totalUnique">Total unique Device IDs: <%= DistributedHealth.distinct('deviceID').count %></p>
+
 
 <%= link_to 'New Distributed health', new_distributed_health_path %>
